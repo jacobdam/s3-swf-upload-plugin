@@ -80,7 +80,7 @@ package com.nathancolgate.s3_swf_upload {
       upload_options.Expires        = xml.expirationdate;
       upload_options.Secure         = xml.https;
       if (xml.key) {
-        upload_options.Key = xml.key;
+        upload_options.key = xml.key;
       }
 
       if (xml.errorMessage != "") {
