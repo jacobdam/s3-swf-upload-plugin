@@ -79,6 +79,9 @@ package com.nathancolgate.s3_swf_upload {
       upload_options.acl            = xml.acl;
       upload_options.Expires        = xml.expirationdate;
       upload_options.Secure         = xml.https;
+      if (xml.key) {
+        upload_options.Key = xml.key;
+      }
 
       if (xml.errorMessage != "") {
 				ExternalInterface.call(S3Uploader.s3_swf_obj+'.onSignatureXMLError',toJavascript(_file),xml.errorMessage);
