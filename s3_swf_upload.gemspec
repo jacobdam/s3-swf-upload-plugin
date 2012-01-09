@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.rdoc_options  = ["--line-numbers", "--inline-source", "--title", "S3_swf_upload", "--main", "README.textile"]
   s.require_paths = ["lib"]
 
-  s.add_dependency('aws-s3', '~> 0.6.2')
+  # s.add_dependency('aws-s3', '~> 0.6.2')
 
   if s.respond_to? :specification_version
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
